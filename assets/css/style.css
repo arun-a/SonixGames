@@ -95,7 +95,7 @@ body {
     height: 8px;
     border-radius: 999px;
     background: #ffffff;
-    box-shadow: inset 0 0 8px rgba(0,0,0,.15);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .15);
     overflow: hidden;
 }
 
@@ -148,10 +148,12 @@ body {
         transform: scale(0.95);
         opacity: 0.35;
     }
+
     50% {
         transform: scale(1.05);
         opacity: 0.9;
     }
+
     100% {
         transform: scale(1.1);
         opacity: 0;
@@ -185,6 +187,33 @@ header {
     object-fit: cover;
     border-radius: 0;
     margin-bottom: 0;
+}
+
+.content {
+    padding-top: 60px;
+}
+
+.progress-step {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    z-index: 11;
+    color: var(--progress-step-color);
+    font-size: var(--progress-step-font-size);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    direction: ltr;
+}
+
+.step-bar {
+    margin: 44px 20px 16px 20px;
+    width: calc(100%);
+    height: var(--progress-track-height);
+    border-radius: 999px;
+    background: var(--progress-track-bg);
+    overflow: hidden;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .15);
 }
 
 /* TEXT BLOCKS */
@@ -244,8 +273,8 @@ header {
 
 .lang-btn {
     min-width: 50px;
-    border: 1px solid rgba(255,255,255,.18);
-    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255, 255, 255, .18);
+    background: rgba(255, 255, 255, .08);
     color: #d8e8ff;
     border-radius: 999px;
     font-weight: 700;
@@ -613,9 +642,6 @@ button {
     }
 }
 
-
-
-
 .download-inner {
     padding: 24px;
     text-align: center;
@@ -634,7 +660,7 @@ button {
     background: #e5e7eb;
     border-radius: 4px;
     overflow: hidden;
-    margin: 6px 0 16px;
+    margin: 10px 0 16px;
 }
 
 .step-bar span {
@@ -671,8 +697,6 @@ button {
     font-weight: 700;
     color: #0a66b2;
 }
-
-
 
 .input-tick {
     position: absolute;
@@ -849,7 +873,6 @@ input[type="password"] {
     margin-left: 15px;
     margin-right: 15px;
     padding: 8px 0 16px;
-
 }
 
 .hrefcolor {
@@ -902,15 +925,16 @@ input[type="password"] {
 }
 
 .arabic-list {
-  /* Sets the base direction for the list and its items */
-  direction: rtl; 
-  /* Ensures the text aligns to the right edge within the list item */
-  text-align: right; 
-  /* Optional: Adjusts margins for better appearance if needed */
-  margin-right: 20px; 
-  padding: 0;
+    /* Sets the base direction for the list and its items */
+    direction: rtl;
+    /* Ensures the text aligns to the right edge within the list item */
+    text-align: right;
+    /* Optional: Adjusts margins for better appearance if needed */
+    margin-right: 20px;
+    padding: 0;
 }
+
 .arabic-list li {
-  /* Optional: Further ensures individual item alignment */
-  text-align: right;
+    /* Optional: Further ensures individual item alignment */
+    text-align: right;
 }
