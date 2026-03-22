@@ -53,7 +53,7 @@ body {
 
 .card {
     width: 100%;
-    max-width: 570px;
+    max-width: 620px;
     background: var(--card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
