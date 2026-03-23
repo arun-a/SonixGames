@@ -115,7 +115,6 @@ body {
     display: grid;
     place-items: center;
     background: radial-gradient(circle at 50% 50%, rgba(53, 199, 255, .18), rgba(0, 8, 25, 1) 60%);
-    box-shadow: 0 0 30px rgba(0, 132, 255, .35);
     position: relative;
     overflow: hidden;
     --progress-angle: 0deg;
@@ -136,7 +135,7 @@ body {
     position: absolute;
     inset: 12px;
     border-radius: 50%;
-    background: rgba(1, 9, 25, .95);
+    background: #ffffff;
 }
 
 .circle-progress.is-animate::before {
@@ -161,11 +160,9 @@ body {
 }
 
 .circle-progress .circle-value {
-    color: #ffffff;
-    font-size: 3.6rem;
-    font-weight: 900;
-    letter-spacing: .5px;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, .65), 0 0 8px rgba(64, 180, 255, .6);
+    color: #26a3ff;
+    font-size: 2.5rem;
+    font-weight: 700;
     line-height: 1;
     position: relative;
     z-index: 2;
@@ -177,7 +174,7 @@ header {
 }
 
 .top_picture {
-    width: 220px;
+    width: 150px;
     height: auto;
     position: absolute;
     top: 10px;
@@ -195,10 +192,10 @@ header {
 
 .progress-step {
     position: absolute;
-    top: 45px;
+    top: 25px;
     left: 20px;
     z-index: 11;
-    color: var(--progress-step-color);
+    color: var(--muted);
     font-size: var(--progress-step-font-size);
     font-weight: 700;
     letter-spacing: 1px;
@@ -220,11 +217,10 @@ header {
 
 .title {
     margin: 0 0 8px 0;
-    font-size: 24px;
+    font-size: 14px;
     letter-spacing: 1px;
-    text-transform: uppercase;
     text-align: center;
-    color: #e8f2ff;
+    color: var(--muted);
 }
 
 .sub {
@@ -260,7 +256,7 @@ header {
 
 /* CONTENT */
 .content {
-    padding: 10px 20px 20px 20px;
+    padding: 0 20px;
 }
 
 .lang-toggle {
@@ -426,8 +422,8 @@ h3 {
 }
 
 h2 {
-    font-size: 23px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* ERRORS */
@@ -461,16 +457,13 @@ button {
     cursor: pointer;
     transition: transform .05s ease;
     background: .2s ease, opacity .2s ease;
-
 }
-
 
 .btn {
     position: relative;
     width: 220px;
     height: 48px;
     background: #1592b8;
-    /* color: #1592b8;*/
     color: #ffffff;
     border: 1px solid #1592b8;
     border-radius: 8px;
@@ -480,7 +473,6 @@ button {
     font-weight: 600;
     transition: border-color 0.3s ease;
 }
-
 
 .btndownload {
     position: relative;
@@ -492,8 +484,8 @@ button {
     border-radius: 14px;
     cursor: pointer;
     overflow: hidden;
-    font-size: 22px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 700;
     letter-spacing: 1px;
     transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     box-shadow: 0 6px 20px rgba(19, 130, 216, .35);
@@ -509,7 +501,6 @@ button {
 .btndownload::after {
     display: none;
 }
-
 
 .btndownload span {
     position: relative;
@@ -536,8 +527,6 @@ button {
 .btndownload:hover::after {
     width: 100%;
 }
-
-*/
 
 /* ACCESSIBILITY */
 .sr {
@@ -595,14 +584,12 @@ button {
 
 }
 
-
 .minio {
     font-size: .85rem;
     color: var(--muted);
     text-align: left;
     padding: 8px 0 16px;
     margin-top: 50px;
-
 }
 
 .minio a {
@@ -660,7 +647,7 @@ button {
     background: #e5e7eb;
     border-radius: 4px;
     overflow: hidden;
-    margin: 10px 0 16px;
+    margin: 0 0 10px;
 }
 
 .step-bar span {
@@ -711,17 +698,13 @@ button {
     transition: transform .2s ease;
 }
 
-
 .download-page .field.valid .input-tick {
     transform: translateY(-50%) scale(1);
 }
 
-
-
 .download-page .field.invalid input {
     border-color: #ef4444;
 }
-
 
 .downloadbody {
     background-color: #ffffff;
@@ -734,27 +717,20 @@ button {
 .animated-arrow {
     width: 20px;
     height: 20px;
-    /* Creates the triangle shape */
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 20px solid #90EE90;
-    /* Green color */
-
-    /* Animation settings */
     animation: bounceRight 1.5s infinite;
 }
 
 /* The movement logic */
 @keyframes bounceRight {
-
     0%,
     100% {
         transform: translateX(0);
     }
-
     50% {
         transform: translateX(15px);
-        /* Moves 15px to the right */
     }
 }
 
@@ -771,13 +747,7 @@ button {
     height: 20px;
     margin-left: 10px;
     background-color: #90EE90;
-    /* Light Green */
-
-    /* Creates the arrow shape */
     clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-
-    /* Animation link */
-    /* animation: pulse 1.5s infinite ease-in-out; */
     animation: bounceRight 1.5s infinite;
 }
 
@@ -787,12 +757,10 @@ button {
         transform: scale(1);
         opacity: 1;
     }
-
     50% {
         transform: scale(1.2);
         opacity: 0.7;
     }
-
     100% {
         transform: scale(1);
         opacity: 1;
@@ -803,7 +771,6 @@ button {
 input::placeholder {
     font-weight: bold;
     color: #555;
-    /* Optional: adjust color for better visibility */
 }
 
 /* Individual browser prefixes for maximum compatibility */
@@ -830,30 +797,19 @@ input[type="email"],
 input[type="password"] {
     font-weight: bold;
     font-size: 16px;
-    /* Optional: standardizing size helps readability */
     color: #333;
-    /* Optional: sets the typing color */
 }
 
-/* Option 2: Apply using a specific class */
 .bold-input {
     font-weight: 700;
-    /* 700 is the numeric equivalent of bold */
 }
 
 .link-container {
     display: flex;
-    /* Activates flexbox layout */
     justify-content: space-between;
-    /* Pushes children to opposite ends */
     width: 100%;
-    /* Ensure the container spans the full width of its parent */
     padding: 10px 0;
-    /* Optional: Add some vertical spacing */
     box-sizing: border-box;
-    /* Ensures padding is included in the width calculation */
-    /* Optional: Add a border to visualize the container area */
-    /* border: 1px solid red; */
 }
 
 /* Optional: Basic styling for the links */
@@ -869,7 +825,7 @@ input[type="password"] {
     font-size: .85rem;
     color: var(--muted);
     text-align: left;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
     padding: 8px 0 16px;
@@ -882,10 +838,8 @@ input[type="password"] {
 }
 
 .middletitle {
-    /*color: rgba(0, 0, 0, 0); */
     font-weight: bold;
     font-size: 1.25rem;
-    /* text-align: left; */
 }
 
 /* RTL adjustments for Arabic mode */
@@ -896,7 +850,6 @@ input[type="password"] {
 
 .lang-ar .field {
     direction: ltr;
-    /* keep numeric input left-to-right */
 }
 
 .lang-toggle {

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const strings = {
         en: {
-            title: "ENTER YOUR MOBILE NUMBER",
+            title: "Enter your Mobile Number",
             lead: "Get exclusive games now on your phone.",
             msisdnHint: "Enter your MSISDN (e.g., 00966544660609)",
             msisdnLabel: "Mobile number",
@@ -173,8 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             if (progress.circleValue) {
                 progress.circleValue.textContent = `${value}%`;
-                progress.circleValue.style.color = '#ffffff';
-                progress.circleValue.style.textShadow = '0 2px 12px rgba(0, 0, 0, .65), 0 0 8px rgba(64, 180, 255, .6)';
+                progress.circleValue.style.color = '#26a3ff';
             }
             if (circleElement) {
                 circleElement.style.setProperty('--progress-angle', `${value * 3.6}deg`);
