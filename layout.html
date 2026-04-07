@@ -1,112 +1,35 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IQZ Subscription</title>
+    <title>SONIC GAMES</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-
 </head>
-
-<main class="wrap">
-    <section class="card" role="region" aria-labelledby="service-title" id="wholecard">
-
-        <!-- HEADER -->
-        <header>
-            <img src="assets/images/banner.png" alt="Sonix Games" class="top_picture" />
-        </header>
-
-        <!-- CONTENT -->
-        <div class="content">
-            <div class="progress-step" aria-label="Progress">STEP <span id="pagecount">1</span>/2</div>
-            <div class="step-bar" aria-label="Progress">
-                <span class="progress-span"></span>
-            </div>
-            <div class="lang-toggle" role="navigation" aria-label="Language toggle">
-                <button type="button" class="lang-btn" data-lang="en">EN</button>
-                <button type="button" class="lang-btn" data-lang="ar">AR</button>
-            </div>
-            <div class="circle-progress" aria-hidden="true">
-                <span class="circle-value">0%</span>
-            </div>
-            <h1 class="title" id="service-title">Enter your Mobile Number</h1>
-      
-            <div id="msisdn-section">
-                <div class="field">
-                    <span aria-hidden="true" class="light-arrow"></span>
-                    <input id="msisdn" name="msisdn" type="tel" inputmode="tel" placeholder="00966544660609"
-                        autocomplete="tel" minlength="8" maxlength="15" required aria-describedby="msisdn-hint" />
-                    <span class="input-tick" aria-hidden="true">✅</span>
-                </div>
-
-                <div class="error" id="msisdn-error" role="alert"></div>
-
-                <div class="actions">
-                    <button type="button" class="btndownload" id="submit-msisdn">
-                        <span class="btn-label" id="submit-msisdn-text">GET IT NOW</span>
-                    </button>
-                </div>
+<body>
+    <main class="wrap">
+        <section class="screen">
+            <div class="hero-text">
+                <h1>SONIC GAMES</h1>
+                <p>GET UNLIMITED GAMES</p>
             </div>
 
-            <div id="pin-section" style="display:none">
-                <h2 id="pin-title">Enter PIN</h2>
-                <p class="sub" id="pin-sub">A PIN has been sent to your mobile number.</p>
-
-                <label for="pin" id="pin-label"><b>PIN</b></label>
-                <div class="field">
-                    <span aria-hidden="true" class="light-arrow"></span>
-                    <input id="pin" name="pin" type="tel" inputmode="numeric" placeholder="1234" maxlength="6" autocomplete="one-time-code" />
-                    <span class="input-tick" aria-hidden="true">✅</span>
-                </div>
-
-                <div class="error" id="pin-error" role="alert"></div>
-
-                <div class="actions">
-                    <button type="button" class="btndownload" id="submit-pin">
-                        <span class="btn-label" id="submit-pin-text">VERIFY PIN</span>
-                    </button>
-                </div>
+            <div class="circle-progress" id="circle-progress">
+                <span class="circle-value" id="circle-value">0%</span>
             </div>
 
-            <div class="success" id="thank-you" style="display:none" aria-live="polite" aria-atomic="true">
-                <h2 id="thank-you-title">Thank you!</h2>
-                <p id="thank-you-sub">Your subscription is now active.</p>
-            </div>
+            <footer class="mini-footer">
+                <p><a href="#" class="terms-title"><center>Terms & Conditions</center></a></p>
+                <p><center>Users must be 18 years or older in order to join this service. 
+                    This premium rate subscription service is available for Safaricom users only. 
+                    Users will be able to access variety of games after subscribed to the service. 
+                    Users' phone must be WAP/GPRS enabled. Subscription: Ksh15/SMS/DAY. 
+                    To cancel the service: send STOP GAMES6 to 27039 for Safaricom or dial *100# or *200#. 
+                    For help call +254202412334 or email: help@weiserstamm.com</center></p>
+            </footer>
+        </section>
+    </main>
 
-            <div class="mini-footer" id="disclaimer">
-                <div class="disclaimer-block" data-lang="en">
-                    <ul>
-                        <li>Welcome to Sonic Games: Games Subscription.</li>
-                        <li>The service price is 0.20 JOD daily on Zain and Umniah, and 0.25 JOD daily on Orange. The
-                            subscription will be renewed automatically.</li>
-                        <li>You can unsubscribe at any time via SMS: For Zain send <strong>U50</strong> to
-                            <strong>90910</strong>, for Umniah send <strong>Exit 18</strong> to <strong>98819</strong>,
-                            for Orange send <strong>U12</strong> to <strong>98860</strong>.</li>
-                        <li>By subscribing to the service, you accept all terms and conditions and agree to share your
-                            information with the service provider.</li>
-                        <li>To benefit from this service, you must be over 18 years old or have obtained permission from
-                            your parents or the person authorized to pay your bill.</li>
-                    </ul>
-                </div>
-
-                <div class="disclaimer-block" data-lang="ar" style="display:none">
-                    <ul class="arabic-list">
-                         <li>مرحبًا بك في خدمة Sonic Games: اشتراك الألعاب</li>
-                        <li>سعر الخدمة 0.20 دينار أردني يوميًا لمشتركي زين وأمنية، و0.25 دينار أردني يوميًا لمشتركي
-                            أورانج. سيتم تجديد الاشتراك تلقائيًا.</li>
-                        <li>يمكنك إلغاء الاشتراك في أي وقت عن طريق رسالة نصية: لمشتركي زين أرسل <strong>U50</strong> إلى
-                            <strong>90910</strong>، لمشتركي أمنية أرسل <strong>Exit 18</strong> إلى
-                            <strong>98819</strong>، لمشتركي أورانج أرسل <strong>U12</strong> إلى <strong>98860</strong>.
-                        </li>
-                        <li>بمجرد الاشتراك في الخدمة، فإنك توافق على جميع الشروط والأحكام وتوافق على مشاركة معلوماتك مع
-                            مزود الخدمة.</li>
-                        <li>للاستفادة من هذه الخدمة، يجب أن يكون عمرك أكثر من 18 عاماً أو أن تحصل على إذن من والديك أو
-                            الشخص المفوّض بدفع فاتورتك.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<script src="assets/script/main.js"></script>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
